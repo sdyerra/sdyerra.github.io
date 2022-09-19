@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UTF-8">
+    <meta name="author" content="Saideepak Yerra">
+    <meta name="description" content="Sai Yerra">
+    <meta name="keywords" content="Sai, Yerra, Resume, Saideepak, Sai Yerra">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>temp</title>
+</header>
+<nav>
+    <div onclick="ham_menu()" class="hamburger">
+        <div class="hamburger__container">
+          <div  class="hamburger__inner"></div>
+          <div class="hamburger__hidden"></div>
+        </div>
+        <ul id="menu">
+            <li><a id="menuitem">Home</a></li>
+            <li><a id="menuitem" href="contact.html">Contact</a></li>
+            <li><a id="menuitem" class="darkmodebtn" onclick="darkMode()">Dark Mode</a></li>
+        </ul>
+    </div>
+    
+</nav>
+    <body>
+        <div class="mainpage">
+            <div id='text-heading'>
+                <p id="demo"></p>
+            </div>
+            <div id="text">
+                <p>Welcome to Sai Yerra's website</p>
+            </div>
+            <!--<div id="filter"></div> -->
+            <div id="dot">
+                <div id='container'></div>
+            </div>
+        </div>
+        <script>
+            let currentDate = new Date()
+            let time = currentDate.getHours();
+            if (time >= 4 && time < 12) {
+                document.getElementById("demo").innerHTML = "Good Morning,";
+            }
+            else if (time >= 12 && time < 16) {
+                document.getElementById("demo").innerHTML = "Good Afternoon,";
+            }
+            else {
+                document.getElementById("demo").innerHTML = "Good Evening,";
+            }
+        </script>
+    </body>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="hamburger.css" type="text/css">
+    <script type="text/javascript" src="script.js"></script>
+</html>
