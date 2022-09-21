@@ -1,0 +1,41 @@
+.back {
+    width: 35px;
+    height: 24px;
+    position: absolute;
+    user-select: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.back_top {
+    height: 2px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: black;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    top: 25%;
+    transform: rotate(-25deg);
+    opacity: 1;
+}
+
+.back_bottom {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+    top: 89%;
+    transform: rotate(25deg);
+    opacity: 1;
+}
+
+.back:hover > .back_bottom, .back:hover > .back_top {
+    background-color: rgb(194, 220, 253);
+    /*transform: scale(1.3) rotate(-25deg);*/
+}

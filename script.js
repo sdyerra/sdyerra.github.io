@@ -149,7 +149,8 @@ function darkMode()
     document.getElementById("text").style.color = "white";
     document.getElementById("text-heading").style.color = "white";
     document.getElementById("menu").style.color = "white";
-    console.log(document.querySelector('.hamburger'));
+    document.getElementsByClassName("hamburger__inner")[0].style.backgroundColor = "white";
+    document.getElementsByClassName("hamburger__inner")[0].classList.toggle("dark");
     
     // Color of Dots
     COLOR = 1000;
@@ -163,6 +164,8 @@ function darkMode()
     document.getElementById("text").style.color = "black";
     document.getElementById("text-heading").style.color = "black";
     document.getElementById("menu").style.color = "black";
+    document.getElementsByClassName("hamburger__inner")[0].style.backgroundColor = "black";
+    document.getElementsByClassName("hamburger__inner")[0].classList.toggle("dark");
     
     // Color of Dots
     COLOR = 0;
