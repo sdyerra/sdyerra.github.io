@@ -7,6 +7,12 @@
     color: inherit;
 }
 
+.back:hover > .back_bottom,
+.back:hover > .back_top {
+    background-color: rgb(194, 220, 253);
+    /*transform: scale(1.3);*/
+}
+
 .back_top {
     height: 2px;
     width: 100%;
@@ -35,7 +41,30 @@
     opacity: 1;
 }
 
-.back:hover > .back_bottom, .back:hover > .back_top {
-    background-color: rgb(194, 220, 253);
-    /*transform: scale(1.3) rotate(-25deg);*/
+.back_top.dark {
+    height: 2px;
+        width: 100%;
+        border-radius: 4px;
+        background-color: white;
+        position: absolute;
+        transition-property: transform, opacity;
+        transition-timing-function: ease;
+        transition-duration: 0.4s;
+        top: 25%;
+        transform: rotate(-25deg);
+        opacity: 1;
+}
+
+.back_bottom.dark {
+    height: 2px;
+        width: 100%;
+        background-color: white;
+        border-radius: 4px;
+        position: absolute;
+        transition-property: transform, opacity;
+        transition-timing-function: ease;
+        transition-duration: 0.4s;
+        top: 89%;
+        transform: rotate(25deg);
+        opacity: 1;
 }

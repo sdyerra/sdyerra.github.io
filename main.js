@@ -47,8 +47,6 @@ particle = {
   y: 0
 };
 
-var dark = false;
-
 function init() {
 
   container = document.getElementById( 'container' );
@@ -136,43 +134,6 @@ function step() {
   if ( stats ) stats.end();
 
   requestAnimationFrame( step );
-}
-
-/**
- * Function that controls Dark Mode and Colors
- */
-function darkMode()
-{
-  if (!dark)
-  {
-    document.body.style.background = "black";
-    document.getElementById("text").style.color = "white";
-    document.getElementById("text-heading").style.color = "white";
-    document.getElementById("menu").style.color = "white";
-    document.getElementsByClassName("hamburger__inner")[0].style.backgroundColor = "white";
-    document.getElementsByClassName("hamburger__inner")[0].classList.toggle("dark");
-    
-    // Color of Dots
-    COLOR = 1000;
-
-    // Set bool
-    dark = true;
-  }
-  else
-  {
-    document.body.style.backgroundColor = "white";
-    document.getElementById("text").style.color = "black";
-    document.getElementById("text-heading").style.color = "black";
-    document.getElementById("menu").style.color = "black";
-    document.getElementsByClassName("hamburger__inner")[0].style.backgroundColor = "black";
-    document.getElementsByClassName("hamburger__inner")[0].classList.toggle("dark");
-    
-    // Color of Dots
-    COLOR = 0;
-
-    // Set bool
-    dark = false;
-  }
 }
 
 function ham_menu() {
