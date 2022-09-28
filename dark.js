@@ -45,6 +45,8 @@ function makeDark() {
     document.getElementById("menu").style.color = "white";
     document.getElementsByClassName("hamburger__inner")[0].style.backgroundColor = "white";
     document.getElementsByClassName("hamburger__inner")[0].classList.toggle("dark");
+    document.getElementsByClassName("darkmodebtn")[0].textContent = "Light Mode";
+    
 
     // Color of Dots
     COLOR = 1000;
@@ -64,6 +66,7 @@ function makeLight() {
     document.getElementById("menu").style.color = "black";
     document.getElementsByClassName("hamburger__inner")[0].style.backgroundColor = "black";
     document.getElementsByClassName("hamburger__inner")[0].classList.toggle("dark");
+    document.getElementsByClassName("darkmodebtn")[0].textContent = "Dark Mode";
 
     // Color of Dots
     COLOR = 0;
