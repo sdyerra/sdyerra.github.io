@@ -1,0 +1,8 @@
+body {
+    font-family: "Akshar", sans-serif;
+    text-align: center;
+    font-size: 50pt;
+    background-color: lightblue;
+    color: white;
+    user-select: none;
+}
