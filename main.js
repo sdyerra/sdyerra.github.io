@@ -1,15 +1,37 @@
-var NUM_PARTICLES = ( ( ROWS = 80 ) * ( COLS = 80 ) ),
+let screenwidth = screen.width;
+let rowcol = 0;
+if (screenwidth <= 300) {
+  rowcol = 32;
+}
+else if (screenwidth <= 595) {
+  rowcol = 43;
+}
+else if (screenwidth >= 600 && screenwidth < 768) {
+  rowcol = 40;
+}
+else if (screenwidth >= 768 && screenwidth < 889) {
+  rowcol = 80;
+}
+else if (screenwidth >= 889 && screenwidth < 1200) {
+  rowcol = 90;
+}
+else if (screenwidth => 1200) {
+  rowcol = 100;
+}
+
+var NUM_PARTICLES = ((ROWS = rowcol) * (COLS = rowcol)),
     // Thickness of cursor bubble
-    THICKNESS = Math.pow(40, 2),
+    THICKNESS = Math.pow(25, 2),
     // Spacing between dots
-    SPACING = 10,
+    SPACING = 8,
+    //Margin - LEAVE at 0
     MARGIN = 0,
     // Color of Dots
     COLOR = 0,
     // Trail for cursor
-    DRAG = 0.9,
+    DRAG = 0.89,
     // How dots go back into place
-    EASE = 0.4,
+    EASE = 0.2,
     
     /*
     

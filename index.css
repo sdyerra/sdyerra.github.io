@@ -3,59 +3,287 @@
 @import url(https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap);
 
 
-
-#topnav {
-  position: relative;
-  align-items: center;
-  display: inline-block;
-  justify-content: center;
-  cursor: pointer; 
-  z-index: 3;
-  font-family: "Akshar", sans-serif;
-  font-size: 20pt;
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+  #topnav {
+      position: relative;
+      align-items: center;
+      display: inline-block;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 3;
+      font-family: "Akshar", sans-serif;
+      font-size: 20pt;
+    }
+  
+    /* Filter Image on top of container */
+    /*#filter {
+      position: absolute;
+      content: url("star-shape1.png");
+      z-index: 2;
+      pointer-events: none;
+    }*/
+  
+    #dot {
+      display: flex;
+      justify-content: center;
+      z-index: 1;
+    }
+  
+    /* Dots */
+    #container {
+      animation: fadeIn linear 2s;
+      user-select: none;
+    }
+  
+    /* Time of Day */
+    #text-heading {
+      text-align: center;
+      font-size: 40pt;
+      color: rgb(0, 0, 0);
+      font-family: "Open Sans", sans-serif;
+      z-index: 2;
+      pointer-events: none;
+      user-select: none;
+    }
+  
+    /* Secondary Text */
+    #text {
+      font-size: 18pt;
+      color: rgb(0, 0, 0);
+      font-family: "Open Sans", sans-serif;
+      z-index: 2;
+      pointer-events: none;
+      user-select: none;
+      text-align: center;
+    }
 }
 
-/* Filter Image on top of container */
-#filter {
-  position: absolute;
-  content: url("star-shape1.png");
-  z-index: 2;
-  pointer-events: none;
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+  #topnav {
+      position: relative;
+      align-items: center;
+      display: inline-block;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 3;
+      font-family: "Akshar", sans-serif;
+      font-size: 20pt;
+    }
+  
+    /* Filter Image on top of container */
+    #filter {
+      position: absolute;
+      content: url("star-shape1.png");
+      z-index: 2;
+      pointer-events: none;
+    }
+  
+    #dot {
+      display: flex;
+      justify-content: center;
+      z-index: 1;
+    }
+  
+    /* Dots */
+    #container {
+      animation: fadeIn linear 2s;
+      user-select: none;
+    }
+  
+    /* Time of Day */
+    #text-heading {
+      text-align: center;
+      font-size: 65pt;
+      color: rgb(0, 0, 0);
+      font-family: "Open Sans", sans-serif;
+      z-index: 2;
+      pointer-events: none;
+      user-select: none;
+    }
+  
+    /* Secondary Text */
+    #text {
+      font-size: 30pt;
+      color: rgb(0, 0, 0);
+      font-family: "Open Sans", sans-serif;
+      z-index: 2;
+      pointer-events: none;
+      user-select: none;
+      text-align: center;
+    }
 }
 
-#dot {
-  display: flex;
-  justify-content: center;
-  z-index: 1;
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+  #topnav {
+      position: relative;
+      align-items: center;
+      display: inline-block;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 3;
+      font-family: "Akshar", sans-serif;
+      font-size: 20pt;
+    }
+  
+    /* Filter Image on top of container */
+    #filter {
+      position: absolute;
+      content: url("star-shape1.png");
+      z-index: 2;
+      pointer-events: none;
+    }
+  
+    #dot {
+      display: flex;
+      justify-content: center;
+      z-index: 1;
+    }
+  
+    /* Dots */
+    #container {
+      animation: fadeIn linear 2s;
+      user-select: none;
+    }
+  
+    /* Time of Day */
+    #text-heading {
+      text-align: center;
+      font-size: 65pt;
+      color: rgb(0, 0, 0);
+      font-family: "Open Sans", sans-serif;
+      z-index: 2;
+      pointer-events: none;
+      user-select: none;
+    }
+  
+    /* Secondary Text */
+    #text {
+      font-size: 35pt;
+      color: rgb(0, 0, 0);
+      font-family: "Open Sans", sans-serif;
+      z-index: 2;
+      pointer-events: none;
+      user-select: none;
+      text-align: center;
+    }
 }
 
-/* Dots */
-#container {
-  animation: fadeIn linear 2s;
-  user-select: none;
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+  #topnav {
+      position: relative;
+      align-items: center;
+      display: inline-block;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 3;
+      font-family: "Akshar", sans-serif;
+      font-size: 20pt;
+    }
+  
+    /* Filter Image on top of container */
+    #filter {
+      position: absolute;
+      content: url("star-shape1.png");
+      z-index: 2;
+      pointer-events: none;
+    }
+  
+    #dot {
+      display: flex;
+      justify-content: center;
+      z-index: 1;
+    }
+  
+    /* Dots */
+    #container {
+      animation: fadeIn linear 2s;
+      user-select: none;
+    }
+  
+    /* Time of Day */
+    #text-heading {
+      text-align: center;
+      font-size: 75pt;
+      color: rgb(0, 0, 0);
+      font-family: "Open Sans", sans-serif;
+      z-index: 2;
+      pointer-events: none;
+      user-select: none;
+    }
+  
+    /* Secondary Text */
+    #text {
+      font-size: 40pt;
+      color: rgb(0, 0, 0);
+      font-family: "Open Sans", sans-serif;
+      z-index: 2;
+      pointer-events: none;
+      user-select: none;
+      text-align: center;
+    }
 }
 
-/* Time of Day */
-#text-heading {
-  text-align: center;
-  font-size: 75pt;
-  color: rgb(0, 0, 0);
-  font-family: "Open Sans", sans-serif;
-  z-index: 2;
-  pointer-events: none;
-  user-select: none;
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+  #topnav {
+      position: relative;
+      align-items: center;
+      display: inline-block;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 3;
+      font-family: "Akshar", sans-serif;
+      font-size: 20pt;
+    }
+  
+    /* Filter Image on top of container */
+    #filter {
+      position: absolute;
+      content: url("star-shape1.png");
+      z-index: 2;
+      pointer-events: none;
+    }
+  
+    #dot {
+      display: flex;
+      justify-content: center;
+      z-index: 1;
+    }
+  
+    /* Dots */
+    #container {
+      animation: fadeIn linear 2s;
+      user-select: none;
+    }
+  
+    /* Time of Day */
+    #text-heading {
+      text-align: center;
+      font-size: 75pt;
+      color: rgb(0, 0, 0);
+      font-family: "Open Sans", sans-serif;
+      z-index: 2;
+      pointer-events: none;
+      user-select: none;
+    }
+  
+    /* Secondary Text */
+    #text {
+      font-size: 40pt;
+      color: rgb(0, 0, 0);
+      font-family: "Open Sans", sans-serif;
+      z-index: 2;
+      pointer-events: none;
+      user-select: none;
+      text-align: center;
+    }
 }
 
-/* Secondary Text */
-#text {
-  font-size: 40pt;
-  color: rgb(0, 0, 0);
-  font-family: "Open Sans", sans-serif;
-  z-index: 2;
-  pointer-events: none;
-  user-select: none;
-  text-align: center;
-}
+
 
 /* Fade Animation */
 @keyframes fadeIn {
